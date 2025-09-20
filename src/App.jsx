@@ -1,15 +1,7 @@
 import Header from './components/Header'
 import { ways } from './data'
-
-function WayToTeach ({ title, description }) {
-  return( 
-    <li>
-        <p>
-           <strong>{title}</strong> {description}
-        </p>
-    </li>
-  )
-}
+import WayToTeach from './components/WayToTeach'
+import Button from './components/Button/Button'
 
 export default function App() {
   return (
@@ -33,6 +25,16 @@ export default function App() {
           </ul>
 
         </section>
+
+        <section>
+          <h3>Difference</h3>
+          
+          <Button>1button1</Button>
+          <Button>2button2</Button>
+          <Button>3button3</Button>
+        </section> 
+
+
       </main>
     </div>
 
