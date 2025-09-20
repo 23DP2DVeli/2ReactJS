@@ -24,17 +24,11 @@ export default function App() {
                title={ways[0].title}
                description={ways[0].description}
               />
-              <WayToTeach 
-               title={ways[1].title}
-               description={ways[1].description}
+              <WayToTeach {... ways[1]}
               />
-              <WayToTeach 
-               title={ways[2].title}
-               description={ways[2].description}
+              <WayToTeach {... ways[2]}
               />
-              <WayToTeach 
-               title={ways[3].title}
-               description={ways[3].description}
+              <WayToTeach {... ways[3]}
               />
           </ul>
 
