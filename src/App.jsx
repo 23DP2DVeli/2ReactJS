@@ -1,11 +1,11 @@
 import Header from './components/Header'
 import { ways } from './data'
 
-function WayToTeach (props) {
-  return(
+function WayToTeach ({ title, description }) {
+  return( 
     <li>
         <p>
-           <strong>{props.title}</strong> {props.description}
+           <strong>{title}</strong> {description}
         </p>
     </li>
   )
