@@ -1,9 +1,24 @@
-function App() {
+function Header() {
   return (
-    <div>
-      <h1>Hello React</h1>
-    </div>
+      <header>
+        <h3>Test Header</h3>
+        <span>Time</span>
+      </header>
   )
 }
 
-export default App
+
+
+export default function App() {
+  return (
+    <div>
+      <Header />
+      <main>
+        <h1>Hello React!!</h1>
+      </main>
+    </div>
+
+  )
+}
+
+
