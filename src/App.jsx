@@ -1,20 +1,11 @@
-function Header() {
-  return (
-      <header>
-        <h3>Test Header</h3>
-        <span>Time</span>
-      </header>
-  )
-}
-
-
+import Header from './components/Header'
 
 export default function App() {
   return (
     <div>
       <Header />
       <main>
-        <h1>Hello React!!</h1>
+        <h1>Hello React!!</h1> 
       </main>
     </div>
 
