@@ -1,12 +1,10 @@
 import './Button.css'
 
-export default function Button({ children }) {
-    function handleClick() {
-        console.log('Clicked')
-    }
+export default function Button({ children, onClick }) {
 
     return (
-     <button className='button' onClick={handleClick}>
+     <button 
+        className='button active' onClick={onClick}>
         {children}
     </button>
     
