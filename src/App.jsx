@@ -15,7 +15,13 @@ function handleClick(type) {
 }
 
 
+let tabContent = null
 
+if (contentType) {
+  tabContent = <p>{differences[contentType]}</p>
+} else {
+  tabContent = <p>Press the button</p>
+}
 
 
   return (
@@ -53,10 +59,10 @@ function handleClick(type) {
           {/* { !contentType ? <p>Press the button</p> : null }
           { contentType ? <p>{differences[contentType]}</p> : null } */}
         
-          {!contentType && <p>Press the button</p>}
-          { contentType && <p>{differences[contentType]}</p>}
+          {/* {!contentType && <p>Press the button</p>}
+          { contentType && <p>{differences[contentType]}</p>} */}
         
-        
+          { tabContent }
         </section> 
 
 
