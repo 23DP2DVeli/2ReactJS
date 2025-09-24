@@ -8,14 +8,10 @@ export default function App() {
   const [ content, setContent ] = useState('Press the button')
 
 
-// let content = 'Press the button'
 
-// console.log('App component Render')
 
 function handleClick(type) {
-  // console.log('button click', type)
   setContent(type)
-  // content = type
 }
 
 
