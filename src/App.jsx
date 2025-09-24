@@ -33,7 +33,7 @@ if (contentType) {
 
           <ul>
             {ways.map((way) => {
-              return <WayToTeach {...way} />
+              return <WayToTeach key={way.title} {...way} />
             })}
               
 
