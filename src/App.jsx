@@ -47,8 +47,11 @@ function handleClick(type) {
           <Button onClick={() => handleClick('easy')}>2button2</Button>
           <Button onClick={() => handleClick('program')}>3button3</Button>
         
-          { contentType ? <p>{differences[contentType]}</p> : <div>Press the button</div>}
+          {/* { contentType ? <p>{differences[contentType]}</p> : <p>Press the button</p>} */}
           
+
+          { !contentType ? <p>Press the button</p> : null }
+          { contentType ? <p>{differences[contentType]}</p> : null }
         </section> 
 
 
