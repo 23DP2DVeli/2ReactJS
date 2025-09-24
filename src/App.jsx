@@ -50,8 +50,13 @@ function handleClick(type) {
           {/* { contentType ? <p>{differences[contentType]}</p> : <p>Press the button</p>} */}
           
 
-          { !contentType ? <p>Press the button</p> : null }
-          { contentType ? <p>{differences[contentType]}</p> : null }
+          {/* { !contentType ? <p>Press the button</p> : null }
+          { contentType ? <p>{differences[contentType]}</p> : null } */}
+        
+          {!contentType && <p>Press the button</p>}
+          { contentType && <p>{differences[contentType]}</p>}
+        
+        
         </section> 
 
 
