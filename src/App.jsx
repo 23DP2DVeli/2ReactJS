@@ -32,7 +32,12 @@ if (contentType) {
           <h3>Dexter</h3>
 
           <ul>
-              <WayToTeach 
+            {ways.map((way) => {
+              return <WayToTeach {...way} />
+            })}
+              
+
+              {/* <WayToTeach 
                title={ways[0].title}
                description={ways[0].description}
               />
@@ -41,7 +46,7 @@ if (contentType) {
               <WayToTeach {... ways[2]}
               />
               <WayToTeach {... ways[3]}
-              />
+              /> */}
           </ul>
 
         </section>
