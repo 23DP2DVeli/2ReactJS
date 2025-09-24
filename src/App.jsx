@@ -49,9 +49,9 @@ if (contentType) {
         <section>
           <h3>Difference</h3>
           
-          <Button onClick={() => handleClick('way')}>1button1</Button>
-          <Button onClick={() => handleClick('easy')}>2button2</Button>
-          <Button onClick={() => handleClick('program')}>3button3</Button>
+          <Button isActive={contentType === 'way'} onClick={() => handleClick('way')}>1button1</Button>
+          <Button isActive={contentType === 'easy'} onClick={() => handleClick('easy')}>2button2</Button>
+          <Button isActive={contentType === 'program'} onClick={() => handleClick('program')}>3button3</Button>
         
           {/* { contentType ? <p>{differences[contentType]}</p> : <p>Press the button</p>} */}
           
